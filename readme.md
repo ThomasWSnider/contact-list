@@ -12,9 +12,9 @@ The basic design and layout for this app has been mocked out and the names of th
 ### Requirements
 
 #### Visualization
-- The add contact form can be shown or hidden when necessary
-- Contacts marked as Emergency Contact must be easily distiguished
-- A custom Google Font must be added
+X- The add contact form can be shown or hidden when necessary
+X- Contacts marked as Emergency Contact must be easily distiguished
+X- A custom Google Font must be added
 - Contacts are visible when the page reloads
 
 #### Functionality 

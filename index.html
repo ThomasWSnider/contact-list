@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contacts</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -27,7 +30,9 @@
 
   <main class="container">
 
-    <form class="card mt-1 mb-1" id="new-contact-form" class="" onsubmit="addContact(event)">
+      <button id="add-contact-btn" class="" type="button" onclick="toggleAddContactForm()">Add Contact</button>
+
+    <form class="card mt-1 mb-1 hidden" id="new-contact-form" onsubmit="addContact(event)">
       <div>
         <h4 class="mt-1 mb-1">
           <i class="fa fa-fw fa-user"></i>

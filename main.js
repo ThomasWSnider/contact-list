@@ -1,4 +1,5 @@
 let contacts = []
+let toggle = 0
 
 /**
  * Called when submitting the new Contact Form
@@ -51,6 +52,17 @@ function removeContact(contactId) {
  * Toggles the visibility of the AddContact Form
  */
 function toggleAddContactForm() {
+  let contactForm = document.getElementById("new-contact-form")
+  let addBtn = document.getElementById("add-contact-btn")
+  if (toggle % 2 == 0){
+    contactForm.classList.remove("hidden")
+    addBtn.classList.add("hidden")
+  }else{
+    contactForm.classList.add("hidden")
+    addBtn.classList.remove("hidden")
+  }
+  toggle++
+  console.log(toggle)
 }
 
 
