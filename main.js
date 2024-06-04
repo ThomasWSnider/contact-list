@@ -1,5 +1,5 @@
 let contacts = []
-let toggle = 0
+let toggle = "true"
 
 /**
  * Called when submitting the new Contact Form
@@ -54,14 +54,15 @@ function removeContact(contactId) {
 function toggleAddContactForm() {
   let contactForm = document.getElementById("new-contact-form")
   let addBtn = document.getElementById("add-contact-btn")
-  if (toggle % 2 == 0){
+  if (toggle = "true") {
     contactForm.classList.remove("hidden")
     addBtn.classList.add("hidden")
-  }else{
+    toggle = "false"
+  } else {
     contactForm.classList.add("hidden")
     addBtn.classList.remove("hidden")
+    toggle = "true"
   }
-  toggle++
   console.log(toggle)
 }
 
